@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="dpdk_dump" InternalType="Console">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="src">
+    <File Name="dpdk_dump.cpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="include">
+    <File Name="dpdk_dump.h"/>
+  </VirtualDirectory>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="-std=c++11 -msse4.2" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+        <IncludePath Value="externals/activity"/>
+        <IncludePath Value="externals/dynamic"/>
+        <IncludePath Value="externals/dpdkpp"/>
+        <IncludePath Value="/usr/local/share/dpdk/x86_64-native-linuxapp-gcc/include"/>
+      </Compiler>
+      <Linker Options="-Wl,--whole-archive -ldpdk -Wl,--no-whole-archive -lpthread -ldl">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="GCC ( 4.8 )" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g;-O0;-Wall" C_Options="-g;-O0;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="~Build/$(ConfigurationName)/$(ProjectName)" IntermediateDirectory=".intermediate/$(ConfigurationName)" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="yes">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="GCC ( 4.8 )" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-O2;-Wall" C_Options="-O2;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+        <Preprocessor Value="NDEBUG"/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="~Build/$(ConfigurationName)/$(ProjectName)" IntermediateDirectory=".intermediate/$(ConfigurationName)" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="yes">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>

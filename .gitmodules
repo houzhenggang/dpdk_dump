@@ -1,0 +1,9 @@
+[submodule "externals/activity"]
+	path = externals/activity
+	url = https://github.com/iHardRock/activity.git
+[submodule "externals/dpdkpp"]
+	path = externals/dpdkpp
+	url = https://github.com/iHardRock/dpdkpp.git
+[submodule "externals/dynamic"]
+	path = externals/dynamic
+	url = https://github.com/iHardRock/dynamic.git

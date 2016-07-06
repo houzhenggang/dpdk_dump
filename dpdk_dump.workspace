@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="dpdk_dump" Database="">
+  <Project Name="dpdk_dump" Path="dpdk_dump.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="dpdk_dump" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="dpdk_dump" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
